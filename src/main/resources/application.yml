@@ -1,0 +1,15 @@
+server:
+  port: 8008
+
+spring:
+  datasource:
+    # mysql 6 以上为com.mysql.cj.jdbc.Driver
+    # mysql 6 以下为com.mysql.jdbc.driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # mysql 8 要加上serverTimezone=Asia/Shanghai
+    # 如果连接出现Public Key Retrieval is not allowed错误，还要加上allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: welcome
+mybatis:
+  mapper-locations: classpath:mapper/testdb/*.xml
