@@ -18,7 +18,7 @@ public class Swagger2 {
         return new ApiInfoBuilder()
                 .title("springboot利用swagger构建api文档")
                 .description("简单优雅的restfun风格")
-                .termsOfServiceUrl("http://www.zimug.com")
+                .termsOfServiceUrl("https://www.cnblogs.com/zhoushiya")
                 .version("1.0")
                 .build();
     }
@@ -29,7 +29,7 @@ public class Swagger2 {
                 .apiInfo(apiInfo())
                 .select()
                 //扫描basePackage包下面的“/rest/”路径下的内容作为接口文档构建的目标
-                .apis(RequestHandlerSelectors.basePackage("com.zhoushiya.mybatismutidatasource"))
+                .apis(RequestHandlerSelectors.basePackage("com.zhoushiya.springbootstudy"))
                 .paths(PathSelectors.regex("/rest/.*"))
                 .build();
     }
