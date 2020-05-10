@@ -1,6 +1,6 @@
-package com.zhoushiya.springbootstudy.testdb.mapper;
+package com.example.mybatis.testdb.mapper;
 
-import com.zhoushiya.springbootstudy.testdb.entity.Article;
+import com.example.mybatis.testdb.entity.Article;
 
 import java.util.List;
 

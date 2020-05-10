@@ -1,6 +1,6 @@
-package com.zhoushiya.springbootstudy.testdb.service;
+package com.example.mybatis.testdb.service;
 
-import com.zhoushiya.springbootstudy.testdb.vo.ArticleVO;
+import com.example.mybatis.testdb.vo.ArticleVO;
 
 import java.util.List;
 

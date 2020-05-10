@@ -1,10 +1,10 @@
-package com.zhoushiya.springbootstudy.testdb.service.impl;
+package com.example.mybatis.testdb.service.impl;
 
-import com.zhoushiya.springbootstudy.testdb.entity.Article;
-import com.zhoushiya.springbootstudy.testdb.mapper.ArticleMapper;
-import com.zhoushiya.springbootstudy.testdb.service.IArticleService;
-import com.zhoushiya.springbootstudy.testdb.vo.ArticleVO;
-import com.zhoushiya.springbootstudy.utils.DozerUtils;
+import com.example.mybatis.testdb.entity.Article;
+import com.example.mybatis.testdb.service.IArticleService;
+import com.example.mybatis.testdb.vo.ArticleVO;
+import com.example.mybatis.testdb.mapper.ArticleMapper;
+import com.example.mybatis.utils.DozerUtils;
 import org.dozer.Mapper;
 import org.springframework.stereotype.Service;
 

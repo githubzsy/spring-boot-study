@@ -1,7 +1,7 @@
-package com.zhoushiya.springbootstudy.testdb.controller;
+package com.example.mybatis.testdb.controller;
 
-import com.zhoushiya.springbootstudy.testdb.service.IArticleService;
-import com.zhoushiya.springbootstudy.testdb.vo.ArticleVO;
+import com.example.mybatis.testdb.service.IArticleService;
+import com.example.mybatis.testdb.vo.ArticleVO;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

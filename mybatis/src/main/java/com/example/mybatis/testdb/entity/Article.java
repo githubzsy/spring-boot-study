@@ -1,4 +1,4 @@
-package com.zhoushiya.springbootstudy.testdb.entity;
+package com.example.mybatis.testdb.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

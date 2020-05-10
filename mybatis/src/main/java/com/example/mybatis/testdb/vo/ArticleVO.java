@@ -1,4 +1,4 @@
-package com.zhoushiya.springbootstudy.testdb.vo;
+package com.example.mybatis.testdb.vo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;

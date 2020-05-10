@@ -1,4 +1,4 @@
-package com.zhoushiya.springbootstudy.utils;
+package com.example.mybatis.utils;
 
 import com.google.common.collect.Lists;
 import org.dozer.DozerBeanMapperBuilder;
