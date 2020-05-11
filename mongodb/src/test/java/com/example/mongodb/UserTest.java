@@ -1,5 +1,6 @@
 package com.example.mongodb;
 
+import com.example.mongodb.dao.IUserDao;
 import com.example.mongodb.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -16,8 +17,16 @@ public class UserTest {
     @Resource
     private MongoTemplate mongoTemplate;
 
+    @Resource
+    private IUserDao userDao;
+
     @Test
     public void getAll(){
         mongoTemplate.findAll(User.class).forEach(System.out::println);
+    }
+
+    @Test
+    public void findByName(){
+        System.out.println(userDao.findByName("name3"));
     }
 }
