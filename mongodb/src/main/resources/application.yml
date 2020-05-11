@@ -1,4 +1,7 @@
 spring:
   data:
     mongodb:
+      # mongodb://username:password@serverIp:port/dbname
       uri: "mongodb://test_admin:welcome@localhost:27017/test"
+server:
+  port: 8001

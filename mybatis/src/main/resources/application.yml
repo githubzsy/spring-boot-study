@@ -1,13 +1,12 @@
 server:
   port: 8008
-
 spring:
   datasource:
-    # mysql 6 以上为com.mysql.cj.jdbc.Driver
-    # mysql 6 以下为com.mysql.jdbc.driver
+    # mysql 6 浠ヤ笂: com.mysql.cj.jdbc.Driver
+    # mysql 6 浠ヤ笅锛歝om.mysql.jdbc.driver
     driver-class-name: com.mysql.cj.jdbc.Driver
-    # mysql 8 要加上serverTimezone=Asia/Shanghai
-    # 如果连接出现Public Key Retrieval is not allowed错误，还要加上allowPublicKeyRetrieval=true
+    # mysql 8 瑕佸姞涓妔erverTimezone=Asia/Shanghai
+    # 濡傛灉鍑虹幇閿欒锛歅ublic Key Retrieval is not allowed 杩橀渶瑕佸姞涓奱llowPublicKeyRetrieval=true
     url: jdbc:mysql://localhost:3306/testdb?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
     username: root
     password: welcome
