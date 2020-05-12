@@ -19,12 +19,19 @@
     </properties>
 
     <dependencies>
-        <!-- mongodb驱动 -->
+        <!-- mongodb -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>
-        <!-- mongodb驱动结束 -->
+        <!-- mongodb结束 -->
+
+        <!-- rest接口快速实现 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
+        </dependency>
+        <!-- rest接口结束 -->
 
     </dependencies>
 
