@@ -1,0 +1,9 @@
+server:
+  port: 8015
+
+debug: true
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://test_admin:welcome@localhost:27017/test
