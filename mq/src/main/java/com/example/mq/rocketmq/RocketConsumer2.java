@@ -1,7 +1,9 @@
 package com.example.mq.rocketmq;
 
+import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.spring.annotation.RocketMQMessageListener;
 import org.apache.rocketmq.spring.core.RocketMQListener;
+import org.apache.rocketmq.spring.core.RocketMQPushConsumerLifecycleListener;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,7 +11,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @RocketMQMessageListener(consumerGroup = RocketConstants.CONSUMER_GROUP1, topic = RocketConstants.TEST_TOPIC)
-public class RocketConsumer2 implements RocketMQListener<String> {
+public class RocketConsumer2 implements RocketMQListener<String> , RocketMQPushConsumerLifecycleListener {
+    @Override
+    public void prepareStart(DefaultMQPushConsumer consumer) {
+        consumer.setInstanceName("consumer2");
+    }
 
     @Override
     public void onMessage(String message) {
